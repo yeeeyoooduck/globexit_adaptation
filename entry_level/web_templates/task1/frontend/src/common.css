@@ -1,0 +1,49 @@
+:root {
+    --background-color: #FFFFFF;
+    --text-color: #262C40;
+    --subtext-color: #8189A3;
+    --stroke-color: #D4DEFE;
+    --shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'ProximaNova', sans-serif;
+    height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+html {
+    font-size: 16px;
+    color: #1F1F1F;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+h3 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+h6 {
+    color: var(--text-color);
+    font-size: 1.125rem;
+}
+
+p {
+    color: var(--subtext-color);
+    font-size: 1rem;
+}
+
+small {
+    color: var(--subtext-color);
+    font-size: 0.875rem;
+}
+
+.wrapper {
+    max-width: 75rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+}

@@ -1,0 +1,80 @@
+#root {
+  width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.search-input {
+  padding: 1.5rem;
+  width: -webkit-fill-available;
+  border-radius: 1rem;
+}
+
+.cards-card {
+  width: 100%;
+  border: 1px solid #FFF;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+.error-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.error-popup-content {
+  background-color: black;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.error-popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
