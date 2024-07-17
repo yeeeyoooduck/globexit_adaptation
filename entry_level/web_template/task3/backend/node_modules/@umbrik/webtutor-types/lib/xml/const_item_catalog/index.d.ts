@@ -1,4 +1,0 @@
-type ConstItemCatalogDocumentTopElem = XmlTopElem &
-ConstantItemBase & {
-
-};

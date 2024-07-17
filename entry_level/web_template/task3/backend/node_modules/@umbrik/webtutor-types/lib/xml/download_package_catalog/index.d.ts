@@ -1,4 +1,0 @@
-type DownloadPackageCatalogDocumentTopElem = XmlTopElem &
-DownloadPackageBase & {
-
-};

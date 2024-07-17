@@ -1,4 +1,0 @@
-type DocAccesCatalogDocumentTopElem = XmlTopElem &
-AccessDocBase & {
-
-};

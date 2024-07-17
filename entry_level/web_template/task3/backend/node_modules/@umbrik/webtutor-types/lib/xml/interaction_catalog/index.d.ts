@@ -1,4 +1,0 @@
-type InteractionCatalogDocumentTopElem = XmlTopElem &
-InteractionBase & {
-
-};
