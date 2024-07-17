@@ -1,0 +1,177 @@
+#root {
+  width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.search-input {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  width: -webkit-fill-available;
+  border-radius: 1rem;
+}
+
+.cards-card {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards-card:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.cards-card-name {
+  border: 1px solid #FFF;
+  border-radius: 1rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.cards-card-add {
+  width: 20rem;
+  margin-left: 2rem;
+}
+
+.cards-card-delete {
+  width: 20rem;
+  margin-left: 2rem;
+}
+
+.cards-card-remove {
+  width: 20rem;
+  margin-left: 2rem;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+.error-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.error-popup-content {
+  background-color: black;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.error-popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.tabs {
+  margin-bottom: auto;
+}
+
+.tab-container {
+  padding-bottom: 2rem;
+}
+
+.tab:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.state {
+  display: flex;
+  flex-direction: column;
+}
+
+.department-hierarchy div {
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  border: 1px solid #FFF;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.department-hierarchy li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.tooltip::after {
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 8px 8px 8px 0px;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+	color: #FFF;
+	content: attr(data-tooltip);
+	margin-top: -24px;
+	opacity: 0;
+	padding: 3px 7px;
+	position: absolute;
+	visibility: hidden;
+			
+	transition: all 0.4s ease-in-out;
+}
+		
+.tooltip:hover::after {
+	opacity: 1;
+	visibility: visible;
+}
+
+.departments-filters {
+  border: 1px solid white;
+  display: flex;
+  border-radius: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.departments-filters li {
+  padding: 1rem;
+}
+
+.departments-filters input {
+  margin-right: 0.5rem;
+}
