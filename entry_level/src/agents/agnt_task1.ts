@@ -1,9 +1,3 @@
-/* --- types --- */
-interface IError {
-	code: number;
-	message: string;
-}
-
 /* --- logic --- */
 // Функция для назначения случайных паролей выбранным сотрудникам
 function assignRandomPasswords() {
