@@ -1,14 +1,12 @@
 ﻿/* --- logic --- */
 function sendNotificationToCollaborator() {
-	const query = "sql: select c.id, STRING_AGG(f.person_fullname, ', ') \
-     AS managerNames \
-        from collaborators c \
-            join func_managers f on f.object_id = c.id \
-        where cast(c.hire_date AS DATE) = cast(GETDATE() AS DATE) \
-            or cast(c.hire_date AS DATE) = cast(DATEADD(day, -1, GETDATE()) AS DATE) \
-        group by c.id"
-
-	const collaborators = ArraySelectAll(XQuery(query))
+	const collaborators = ArraySelectAll(XQuery("sql: select c.id, STRING_AGG(f.person_fullname, ', ') \
+	     AS managerNames \
+	        from collaborators c \
+	            join func_managers f on f.object_id = c.id \
+	        where cast(c.hire_date AS DATE) = cast(GETDATE() AS DATE) \
+	            or cast(c.hire_date AS DATE) = cast(DATEADD(day, -1, GETDATE()) AS DATE) \
+	        group by c.id"))
 	const notificationId = OptInt(Param.notification_id)
 
 	let collaborator
