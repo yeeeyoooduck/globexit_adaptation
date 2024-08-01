@@ -1,3 +1,5 @@
+declare let RESULT: ResultObject[];
+
 interface ResultObject {
     id: number;
     code: string;
@@ -7,8 +9,6 @@ interface ResultObject {
     person_fullname: string;
     finish_date: Date
 }
-
-declare let RESULT: ResultObject[];
 
 function showAdaptations() {
 	const query = "sql: \
