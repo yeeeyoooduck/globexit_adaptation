@@ -1,0 +1,18 @@
+{
+    "chapters": [
+        {
+            "name": "vacancy1",
+            "create_date": "17.07.2024",
+            "comment": "comment of card",
+            "parent_document_id": "7116554639492065969",
+            "accessGroupIds": ["7088638975797012230"]
+        },
+        {
+            "name": "vacancy2",
+            "create_date": "16.07.2024",
+            "comment": "comment of card",
+            "parent_document_id": "7116554639492065969",
+            "accessGroupIds": ["7088638975797012230"]
+        }
+    ]
+}
